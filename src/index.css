@@ -6,3 +6,7 @@
     font-family: "VazirFont";
     src: url("../public/Fonts/Vazirmatn-Medium.ttf") format('truetype') ;
 }
+
+.swiper-pagination-bullet-active {
+    background: #7B3EAB;
+  }
