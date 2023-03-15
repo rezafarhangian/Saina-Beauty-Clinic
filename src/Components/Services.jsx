@@ -3,7 +3,7 @@ import ServicesBox from "./ServicesBox";
 
 export default function Services() {
   return (
-    <div className="mt-28 mb-28">
+    <div className="mt-28 mb-28 container">
       <div className="text-center mb-10 relative ">
         <h2 className="text-3xl md:text-5xl">
           خدمات <span className="text-Saina">مجموعه</span>

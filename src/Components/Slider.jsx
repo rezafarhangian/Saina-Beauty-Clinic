@@ -3,7 +3,7 @@ import React from "react";
 export default function Slider({ name, education, Expertise, img }) {
   return (
     <div className="relative pr-5 mx-auto h-60 lg:h-72 xl:h-80  flex items-center justify-center ">
-      <div className="bg-white absolute   p-2 w-60 sm:w-72 sm:p-4 h-44 sm:h-48 lg:w-80 lg:h-56 xl:w-[400px] xl:h-64 rounded-xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]">
+      <div className="bg-white absolute   p-2 w-60 sm:w-72 sm:p-4 h-44 sm:h-48 lg:w-80 lg:h-56 xl:w-[400px] xl:h-64 rounded-2xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]">
         <div className="mr-16 sm:mr-20 lg:text-xl lg:mt-4 xl:text-2xl">
           <h3>
             خانم دکتر <span className="text-Saina">{name}</span>

@@ -8,14 +8,15 @@ import "swiper/css/pagination";
 
 export default function Specialists() {
   return (
-    <div className='mb-20 relative '>
+    <div className='mb-20 relative container'>
         <div className='text-center mb-7'>
             <h2 className='text-3xl md:text-5xl'>متخصصان <span className='text-Saina'>ساینا</span></h2>
         </div>
          
-        <img className='absolute -top-20 right-[250px] xl:right-[370px] hidden lg:block' src="./Images/Specialists/Ellipse.svg" alt="" />
+        <img className='absolute -top-20 right-[250px] xl:right-[380px] hidden lg:block' src="./Images/Specialists/Ellipse.svg" alt="" />
 
         <Swiper
+          slidesPerView={1}
         loop={true}
         pagination={{
           dynamicBullets: true,

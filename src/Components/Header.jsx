@@ -4,7 +4,7 @@ import NavbarMobile from "./NavbarMobile";
 
 export default function Header() {
   return (
-    <div>
+    <div  className='container '>
       <NavbarDesktop />
       <NavbarMobile />
 
