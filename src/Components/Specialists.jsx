@@ -27,7 +27,7 @@ export default function Specialists() {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
-        className=""
+        className="xl:w-[700px]"
       > 
         <SwiperSlide > <Slider name={"عاطفه رمضانی"} img={"./Images/Specialists/doctor1.jpg"} education={"دارای مدرک استتیک (زیبایی) از بیوکر کانادا"} Expertise={"تزریق بوتاکس, تزریق پروفایلو, تزریق هیر فیلر"}/></SwiperSlide>
         <SwiperSlide > <Slider name={"زهرا زندیه"} img={"./Images/Specialists/doctor2.jpg"} education={"دانش اموخته دانشگاه علوم پزشکی تهران"} Expertise={"بوتاکس، درمان ریزش مو،RF فرکشنال"}/></SwiperSlide>

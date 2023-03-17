@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import Services from '../Components/Services'
 import Specialists from '../Components/Specialists'
-import WeblogSection from "../Components/WeblogSection"
+import ArticlesSection from "../Components/ArticlesSection"
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <Services />
       <Specialists />
-       <WeblogSection/>
+       <ArticlesSection/>
     </div>
   )
 }
