@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <div className="mt-28 mb-28 container">
       <div className="text-center mb-10 relative ">
-        <h2 className="text-3xl md:text-5xl">
+        <h2 className="text-3xl md:text-5xl text-[#363E4E]">
           خدمات <span className="text-Saina">مجموعه</span>
         </h2>
          <img className="absolute -top-20 right-[250px] xl:right-[370px] hidden lg:block " src="./Images/Services/Ellipse-Services.svg" alt="" />

@@ -10,7 +10,7 @@ export default function Specialists() {
   return (
     <div className='mb-20 relative container'>
         <div className='text-center mb-7'>
-            <h2 className='text-3xl md:text-5xl'>متخصصان <span className='text-Saina'>ساینا</span></h2>
+            <h2 className='text-3xl md:text-5xl text-[#363E4E]'>متخصصان <span className='text-Saina'>ساینا</span></h2>
         </div>
          
         <img className='absolute -top-20 right-[250px] xl:right-[380px] hidden lg:block' src="./Images/Specialists/Ellipse.svg" alt="" />

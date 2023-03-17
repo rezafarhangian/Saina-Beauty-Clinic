@@ -10,19 +10,8 @@ import { Pagination, Autoplay } from "swiper";
 export default function ArticlesSection() {
   const [category, setCategory] = useState("all");
   const [filretedData, setFilteredData] = useState([]);
-  const [windowSize, setWindowSize] = useState([window.innerWidth]);
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth]);
-    };
 
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  });
 
   useEffect(() => {
     if (category === "educational") {
@@ -43,9 +32,9 @@ export default function ArticlesSection() {
  
 
   return (
-    <div className="mt-40 mb-48">
+    <div className="mt-40 mb-20">
       <div className="text-center relative container ">
-        <h2 className="text-3xl md:text-5xl">
+        <h2 className="text-3xl md:text-5xl text-[#363E4E]">
           وبلاگ <span className="text-Saina">ساینا</span>
         </h2>
         <img
@@ -98,23 +87,27 @@ export default function ArticlesSection() {
             
             <Swiper
              
-              // loop={true}
-              slidesPerView={`${
-                windowSize >= 1024 ? "3" : windowSize >= 768 ? "2" : "1"
-              }`}
+            slidesPerView={1}
+            breakpoints={{
+              768: {
+                // width: 576,
+                slidesPerView: 2,
+              },
+              1024: {
+                // width: 768,
+                slidesPerView: 3,
+              },
+            }}
               pagination={{
                 dynamicBullets: true,
               }}
-              // autoplay={{
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // }}
+              
               modules={[Pagination, Autoplay]}
               className=" xl:w-[1200px]"
             >
               {filretedData.map((article) => {
                 
-                return <SwiperSlide key={article.id}   className=""> <ArticlesBox  {...article} /></SwiperSlide>
+                return <SwiperSlide key={article.id}   className="flex items-center justify-center"> <ArticlesBox  {...article} /></SwiperSlide>
               }
               )} 
  

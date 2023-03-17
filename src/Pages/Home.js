@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Services from '../Components/Services'
 import Specialists from '../Components/Specialists'
 import ArticlesSection from "../Components/ArticlesSection"
+import CustomersComments from '../Components/CustomersComments'
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Header />
       <Services />
       <Specialists />
-       <ArticlesSection/>
+      <ArticlesSection />
+      <CustomersComments/>
     </div>
   )
 }
