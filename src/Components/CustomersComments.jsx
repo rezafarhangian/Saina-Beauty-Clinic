@@ -8,8 +8,8 @@ import Comments from "./CustomersCommentsData";
 
 export default function CustomersComments() {
   return (
-    <div className=" relative lg:mt-32 mb-10 h-[550px]">
-      <div className="text-center lg:absolute  z-40 left-48 xl:left-52 top-0">
+    <div className=" relative lg:mt-32 mb-10 h-[550px] ">
+      <div className="text-center lg:absolute  z-40 left-48 xl:left-52 top-0 ">
         <h2 className="text-3xl md:text-5xl text-[#363E4E] relative">
           نظرات <span className="text-Saina">مشتریان ما</span>
            <img className="hidden w-28 xl:w-36 xl:-top-16 lg:block absolute -top-12 -right-16" src="./Images/CustomersComments/Ellipse.svg" alt="" />
@@ -53,7 +53,7 @@ export default function CustomersComments() {
           dynamicBullets: true,
         }}
         modules={[Pagination, Autoplay]}
-        className=" xl:w-[1200px] relative  -top-96   pb-16 "
+        className=" xl:w-[1200px] relative  -top-96   h-96  "
       >
         {Comments.map((comment) => (
           <SwiperSlide key={comment.id} className="flex items-center justify-center">

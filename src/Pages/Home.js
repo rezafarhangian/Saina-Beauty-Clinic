@@ -4,6 +4,7 @@ import Services from '../Components/Services'
 import Specialists from '../Components/Specialists'
 import ArticlesSection from "../Components/ArticlesSection"
 import CustomersComments from '../Components/CustomersComments'
+import Reservation from '../Components/Reservation'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Specialists />
       <ArticlesSection />
       <CustomersComments/>
+      <Reservation/>
     </div>
   )
 }
