@@ -28,16 +28,18 @@ export default function Reservation() {
             text: "آیا از ارسال اطلاعات اطمینان دارید؟",
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#7B3EAB',
             cancelButtonColor: '#d33',
             confirmButtonText: 'بله',
-            cancelButtonText: "نه"
+            cancelButtonText: "نه",
+            
           }).then((result) => {
             if (result.isConfirmed) {
               Swal.fire(
                 'اطلاعات با موفقیت ارسال شد',
                 "پرسنل ما در اسرع وقت با شما تماس حاصل می فرمایند",
                 'success',
+                'Awesome!',
                 
                 setDataForm({
                     fullName : "",
@@ -54,7 +56,7 @@ export default function Reservation() {
 
 
   return (
-    <div className="container ">
+    <div className="container  ">
       <img
         className="m-auto lg:ml-[400px] xl:-mr-[200px]"
         src="./Images/Reservation/influence.svg"
@@ -68,7 +70,7 @@ export default function Reservation() {
            <img className="absolute hidden lg:block -top-32 left-40 xl:left-96" src="./Images/Reservation/Frame.svg" alt="Frame" />
         </div> 
 
-        <div className="lg:flex items-center justify-around lg:pb-10">
+        <div className="lg:flex items-center justify-around lg:pb-10 ">
           <div className="bg-[#A16ACE] order-2 p-3 mt-5 rounded-xl w-[272px] md:w-[300px] lg:h-[490px] m-auto lg:flex flex-col-reverse">
             <img
               className="w-28 m-auto md:w-40 lg:w-56"

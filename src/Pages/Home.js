@@ -5,6 +5,7 @@ import Specialists from '../Components/Specialists'
 import ArticlesSection from "../Components/ArticlesSection"
 import CustomersComments from '../Components/CustomersComments'
 import Reservation from '../Components/Reservation'
+import AboutUsSection from '../Components/AboutUsSection'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ArticlesSection />
       <CustomersComments/>
       <Reservation/>
+      <AboutUsSection/>
     </div>
   )
 }
