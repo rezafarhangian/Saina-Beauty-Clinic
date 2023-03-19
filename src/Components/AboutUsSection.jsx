@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUsSection() {
   return (
-    <div className="container relative -top-20">
+    <div className="container relative -top-20 mb-16">
       <div className="text-center relative">
         <img className="absolute hidden lg:block right-72 xl:right-96 2xl:right-[500px] -top-20" src="./Images/AboutUsSection/Ellipse.svg" alt="Ellipse" />
         <h2 className="text-3xl md:text-5xl text-[#363E4E]">
