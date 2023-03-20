@@ -9,7 +9,7 @@ export default function NavbarDesktop() {
         <ul className="flex items-center justify-evenly  h-full">
           <li>
             <Link to="/" className="flex items-center">
-              <img className="ml-2" src="./Images/IconNavBar/Home.svg" alt="" />
+              <img className="ml-2" src="./Images/IconNavBar/Home.png" alt="" />
               <p className="">صفحه اصلی</p>
             </Link>
           </li>
@@ -17,7 +17,7 @@ export default function NavbarDesktop() {
             <div className=" group  py-7 flex items-center cursor-pointer relative z-[100]">
               <img
                 className="ml-2"
-                src="./Images/IconNavBar/category.svg"
+                src="./Images/IconNavBar/category.png"
                 alt=""
               />
               <p className="group-hover:text-Saina">خدمات ساینا</p>
@@ -124,7 +124,7 @@ export default function NavbarDesktop() {
             <Link to="/" className="flex items-center">
               <img
                 className="ml-2"
-                src="./Images/IconNavBar/file text.svg"
+                src="./Images/IconNavBar/file text.png"
                 alt=""
               />
               <p className="">وبلاگ</p>
@@ -132,7 +132,7 @@ export default function NavbarDesktop() {
           </li>
           <li>
             <Link to="/" className="flex items-center">
-              <img className="ml-2" src="./Images/IconNavBar/_.svg" alt="" />
+              <img className="ml-2" src="./Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
             </Link>
           </li>
@@ -140,7 +140,7 @@ export default function NavbarDesktop() {
             <Link to="/" className="flex items-center">
               <img
                 className="ml-2"
-                src="./Images/IconNavBar/Users.svg"
+                src="./Images/IconNavBar/Users.png"
                 alt=""
               />
               <p className="">درباره ما</p>

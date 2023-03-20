@@ -7,7 +7,7 @@ export default function CustomerCommentBox({name, desc, category}) {
         <span className="text-[#393C50] font-bold text-xl">{name}</span>
         <img
           className="w-16 h-16"
-          src="./Images/CustomersComments/quotes.svg"
+          src="./Images/CustomersComments/quotes.png"
           alt=""
         />
       </div>

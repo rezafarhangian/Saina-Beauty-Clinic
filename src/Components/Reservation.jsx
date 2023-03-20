@@ -59,22 +59,23 @@ export default function Reservation() {
     <div className="container  ">
       <img
         className="m-auto lg:ml-[400px] xl:-mr-[200px]"
-        src="./Images/Reservation/influence.svg"
+        src="./Images/Reservation/influence.png
+        "
         alt="influence"
       />
       <div className="bg-Saina relative -top-44 sm:-top-64 p-2 rounded-xl ">
         <div className="md:m-6 relative">
           <span className="text-[#C4A0E1] text-xs md:text-lg lg:text-2xl">فرم ثبت</span>
           <h2 className="text-white text-xl  md:text-5xl lg:text-7xl">رزرو نوبت</h2>
-           <img className="absolute hidden lg:block -top-5 right-40" src="./Images/Reservation/Ellipse.svg" alt="Ellipse" />
-           <img className="absolute hidden lg:block -top-32 left-40 xl:left-96" src="./Images/Reservation/Frame.svg" alt="Frame" />
+           <img className="absolute hidden lg:block -top-5 right-40" src="./Images/Reservation/Ellipse.png" alt="Ellipse" />
+           <img className="absolute hidden lg:block -top-32 left-40 xl:left-96" src="./Images/Reservation/Frame.png" alt="Frame" />
         </div> 
 
         <div className="lg:flex items-center justify-around lg:pb-10 ">
           <div className="bg-[#A16ACE] order-2 p-3 mt-5 rounded-xl w-[272px] md:w-[300px] lg:h-[490px] m-auto lg:flex flex-col-reverse">
             <img
               className="w-28 m-auto md:w-40 lg:w-56"
-              src="./Images/Reservation/google-forms.svg"
+              src="./Images/Reservation/google-forms.png"
               alt="icon-forms"
             />
             <p className="text-gray-200 text-sm text-center mt-8 lg:text-lg">

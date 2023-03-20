@@ -20,7 +20,7 @@ export default function NavbarMobile() {
     <div className="lg:hidden container shadow-[0_13px_36px_30px_rgba(83,20,153,0.06)] h-10 rounded-3xl	mt-10">
       <div className="flex items-center justify-between h-full">
         <div onClick={() => setShowSidebar(true)} className="cursor-pointer">
-          <img src="./Images/IconNavBar/menu.svg" alt="" />
+          <img src="./Images/IconNavBar/menu.png" alt="" />
         </div>
         <div className="bg-Saina rounded-full w-8 h-8 flex items-center justify-center">
           <BiSearchAlt className="text-xl cursor-pointer text-white" />

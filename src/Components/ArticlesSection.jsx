@@ -39,7 +39,7 @@ export default function ArticlesSection() {
         </h2>
         <img
           className="absolute -top-20 right-[300px] xl:right-[440px] hidden lg:block"
-          src="./Images/Specialists/Ellipse.svg"
+          src="./Images/Specialists/Ellipse.png"
           alt=""
         />
       </div>
@@ -121,7 +121,7 @@ export default function ArticlesSection() {
 
           <img
             className="absolute top-24 left-0"
-            src="./Images/Articles/Frame.svg"
+            src="./Images/Articles/Frame.png"
             alt=""
           />
         </div>

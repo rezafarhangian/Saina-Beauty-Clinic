@@ -4,7 +4,7 @@ export default function AboutUsSection() {
   return (
     <div className="container relative -top-20 mb-16">
       <div className="text-center relative">
-        <img className="absolute hidden lg:block right-72 xl:right-96 2xl:right-[500px] -top-20" src="./Images/AboutUsSection/Ellipse.svg" alt="Ellipse" />
+        <img className="absolute hidden lg:block right-72 xl:right-96 2xl:right-[500px] -top-20" src="./Images/AboutUsSection/Ellipse.png" alt="Ellipse" />
         <h2 className="text-3xl md:text-5xl text-[#363E4E]">
           <span className="text-Saina">ساینا</span> کجاست؟
         </h2>
@@ -33,10 +33,10 @@ export default function AboutUsSection() {
         </div>
 
 
-         <img className="absolute top-24 z-10 -left-28 hidden lg:block" src="./Images/AboutUsSection/Ellipse-larg.svg" alt="Ellipse-larg" />
+         <img className="absolute top-24 z-10 -left-28 hidden lg:block" src="./Images/AboutUsSection/Ellipse-larg.png" alt="Ellipse-larg" />
 
       </div>
-         <img className="absolute -right-[88px] top-48  hidden lg:block" src="./Images/AboutUsSection/Frame.svg" alt="Frame" />
+         <img className="absolute -right-[88px] top-48  hidden lg:block" src="./Images/AboutUsSection/Frame.png" alt="Frame" />
     </div>
   );
 }
