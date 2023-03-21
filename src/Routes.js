@@ -1,10 +1,10 @@
 import Home from "./Pages/Home"
-import Aboute from "./Pages/Aboute"
+import ServicePage from "./Pages/ServicesPage"
 
 
 const routs = [
     { path: '/', element: <Home/> },
-    { path: '/Aboute', element: <Aboute/> },
+    { path: '/services', element: <ServicePage/> },
    
 ]
 
