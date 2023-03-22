@@ -25,8 +25,8 @@ export default function ServiceDescription({servicesDesc}) {
             alt=""
           />
 
-          <div className="mt-5">
-            <p className="text-xs lg:text-sm md:p-5">
+          <div className="mt-5 md:mt-0 ">
+            <p className="text-xs lg:text-sm md:p-5 ">
              {filteredService.desc}
             </p>
           </div>
