@@ -7,14 +7,13 @@ import Footer from "../Components/Footer"
 import ServicesSlide from '../Components/ServicesSlide'
 
 export default function Services() {
-  const [servicesDesc, setServicesDesc] = useState(1)
   return (
     <div>
       <div className='container'>
         <NavbarDesktop />
         <NavbarMobile />
-        <ServicesHeader setServicesDesc={setServicesDesc} servicesDesc={servicesDesc} />
-        <ServiceDescription servicesDesc={servicesDesc} />
+        <ServicesHeader  />
+        <ServiceDescription />
         <ServicesSlide />
       </div>
       <Footer />

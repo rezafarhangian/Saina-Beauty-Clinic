@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import ServicesData from "../ServicesData"
+import {useSelectTheService} from "../Context/SelectTheService"
 
-export default function ServiceDescription({servicesDesc}) {
+export default function ServiceDescription() {
 
        const [filteredService, setFilteredService] = useState({})
+
+
+       const selectTheService = useSelectTheService()
+       const servicesDesc = selectTheService.servicesDesc
+
 
      useEffect(() => {
         const newService = ServicesData.filter(service => service.id === servicesDesc)

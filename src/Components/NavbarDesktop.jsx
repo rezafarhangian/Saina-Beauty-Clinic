@@ -1,17 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 
+import { useChooseServiceCategory } from "../Context/ServiceCategory";
+import {useSelectTheService} from "../Context/SelectTheService"
+
+
 export default function NavbarDesktop() {
+
+
+  const serviceCategory = useChooseServiceCategory();
+  const setServiceSelection = serviceCategory.setServiceSelection;
+ 
+   const selectTheService = useSelectTheService()
+   const setServicesDesc = selectTheService.setServicesDesc
+
+   
+   const clickHandler = () => {
+    setServiceSelection("1")
+    selectTheService(1)
+   }
+
+
+
   return (
     <div className="hidden lg:flex bg-white  items-center shadow-[0_13px_36px_30px_rgba(83,20,153,0.06)] h-20 rounded-3xl	mt-10 px-2">
       <nav className=" h-full w-4/5">
         <ul className="flex items-center justify-evenly  h-full">
           <li>
-            <Link to="/" className="flex items-center">
+            <NavLink to="/" className="flex items-center">
               <img className="ml-2" src="./Images/IconNavBar/Home.png" alt="" />
               <p className="">صفحه اصلی</p>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <div className=" group  py-7 flex items-center cursor-pointer relative z-[100]">
@@ -20,7 +40,7 @@ export default function NavbarDesktop() {
                 src="./Images/IconNavBar/category.png"
                 alt=""
               />
-              <p className="group-hover:text-Saina">خدمات ساینا</p>
+              <NavLink  to="/services" className={`group-hover:text-Saina  h-full py-7`}>خدمات ساینا</NavLink>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -39,12 +59,12 @@ export default function NavbarDesktop() {
              
 
 
-              <ul className="absolute  hidden group-hover:block  w-48 top-16  shadow bg-white  rounded-2xl">
+              <ul className="absolute  hidden group-hover:block  w-48 top-24  shadow bg-white  rounded-2xl">
                 <li className="border-b-[1px] group/item border-Saina  p-2  ">
                   <div className="flex items-center justify-between">
-                    <p className="group-hover/item:text-Saina">
+                    <Link to="/services" className="group-hover/item:text-Saina">
                       زیبایی و جوانسازی
-                    </p>
+                    </Link>
 
                    
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-hover/item:-rotate-90 group-hover/item:text-Saina">
@@ -54,25 +74,27 @@ export default function NavbarDesktop() {
                   </div>
                   <ul className="hidden group-hover/item:block absolute w-48 -top-[.5px] right-48  shadow bg-white  rounded-2xl">
                     <li className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
+                      <Link to="/services"  >
                       تزریق بوتاکس
+                      </Link>
                     </li>
-                    <li className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
+                    <li  className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
                       تزریق فیلر
                     </li>
-                    <li className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
+                    <li  className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
                       تزریق پلاسماژل
                     </li>
-                    <li className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
+                    <li  className="border-b-[1px] border-Saina  p-2 hover:text-Saina ">
                       زاویه سازی صورت
                     </li>
-                    <li className="  p-2 hover:text-Saina ">
+                    <li  className="  p-2 hover:text-Saina ">
                       فرم دهی بینی با ژل
                     </li>
                   </ul>
                 </li>
                 <li className="border-b-[1px] group/item2 border-Saina p-2">
                   <div className="flex items-center justify-between">
-                    <p className="group-hover/item2:text-Saina">خدمات مو</p>
+                    <Link onClick={() => setServiceSelection("2")} to="/services" className="group-hover/item2:text-Saina">خدمات مو</Link>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-hover/item2:-rotate-90 group-hover/item2:text-Saina">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                    </svg>
@@ -95,9 +117,9 @@ export default function NavbarDesktop() {
                 </li>
                 <li className="  group/item3  p-2">
                   <div className="flex items-center justify-between">
-                    <p className="group-hover/item3:text-Saina">
+                    <Link onClick={() => setServiceSelection("3")} to="/services" className="group-hover/item3:text-Saina">
                       لیزر موهای زائد
-                    </p>
+                    </Link>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-hover/item3:-rotate-90 group-hover/item3:text-Saina">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                    </svg>
@@ -121,30 +143,30 @@ export default function NavbarDesktop() {
             </div>
           </li>
           <li>
-            <Link to="/" className="flex items-center">
+            <NavLink to="/" className="flex items-center">
               <img
                 className="ml-2"
                 src="./Images/IconNavBar/file text.png"
                 alt=""
               />
               <p className="">وبلاگ</p>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/" className="flex items-center">
+            <NavLink to="/" className="flex items-center">
               <img className="ml-2" src="./Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/" className="flex items-center">
+            <NavLink to="/" className="flex items-center">
               <img
                 className="ml-2"
                 src="./Images/IconNavBar/Users.png"
                 alt=""
               />
               <p className="">درباره ما</p>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
