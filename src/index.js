@@ -9,13 +9,13 @@ import SelecTheService from "./Context/SelectTheService"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ServiceCategory>
-      <SelecTheService>
-        <BrowserRouter>
+    <BrowserRouter>
+      <ServiceCategory>
+        <SelecTheService>
           <App />
-        </BrowserRouter>
-      </SelecTheService>
-    </ServiceCategory>
+        </SelecTheService>
+      </ServiceCategory>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

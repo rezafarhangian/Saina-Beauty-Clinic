@@ -1,18 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useChooseServiceCategory } from "../Context/ServiceCategory";
-import {useSelectTheService} from "../Context/SelectTheService"
+import { useSelectTheService } from "../Context/SelectTheService";
 
-  export default function ServicesHeader() {
-
+export default function ServicesHeader() {
   const serviceCategory = useChooseServiceCategory();
   const serviceSelection = serviceCategory.serviceSelection;
   const setServiceSelection = serviceCategory.setServiceSelection;
- 
-   const selectTheService = useSelectTheService()
-   const setServicesDesc = selectTheService.setServicesDesc
-   const servicesDesc = selectTheService.servicesDesc
-   
 
+  const selectTheService = useSelectTheService();
+  const setServicesDesc = selectTheService.setServicesDesc;
+  const servicesDesc = selectTheService.servicesDesc;
+
+  const location = useLocation();
+  
+  useEffect(() => {
+
+    if (location.state) {
+      setServiceSelection(location.state.category);
+      setServicesDesc(location.state.service);
+    }
+    
+
+  });
   return (
     <div className="border- mt-8 py-2 md:flex items-start ">
       <div className=" xl:w-[550px]">
@@ -79,17 +89,17 @@ import {useSelectTheService} from "../Context/SelectTheService"
                 تزریق پلاسماژل
               </li>
               <li
-                onClick={() => setServicesDesc(5)}
+                onClick={() => setServicesDesc(4)}
                 className={`${
-                  servicesDesc === 5 ? "text-Saina" : "text-black"
+                  servicesDesc === 4 ? "text-Saina" : "text-black"
                 } border-b-[1px] cursor-pointer border-Saina p-1 lg:p-2 xl:p-3 text-xs lg:text-sm`}
               >
                 زاویه سازی صورت
               </li>
               <li
-                onClick={() => setServicesDesc(4)}
+                onClick={() => setServicesDesc(5)}
                 className={`${
-                  servicesDesc === 6 ? "text-Saina" : "text-black"
+                  servicesDesc === 5 ? "text-Saina" : "text-black"
                 } p-1 cursor-pointer lg:p-2 xl:p-3 text-xs lg:text-sm`}
               >
                 فرم دهی بینی باژل

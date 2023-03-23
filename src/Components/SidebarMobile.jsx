@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsChevronUp } from "react-icons/bs";
+import { Link, NavLink } from "react-router-dom";
+
+
+import { useChooseServiceCategory } from "../Context/ServiceCategory";
+import { useSelectTheService } from "../Context/SelectTheService";
 
 export default function SidebarMobile({ setShowSidebar }) {
 
@@ -8,6 +13,19 @@ export default function SidebarMobile({ setShowSidebar }) {
   const [openSubMenuBeautyServices, setOpenSubMenuBeautyServices] = useState(false);
   const [openSubMenuHairServices, setOpenSubMenuHairServices] = useState(false);
   const [openSubMenuLaserServices, setOpenSubMenuLaserServices] = useState(false);
+
+
+  const serviceCategory = useChooseServiceCategory();
+  const setServiceSelection = serviceCategory.setServiceSelection;
+
+  const selectTheService = useSelectTheService();
+  const setServicesDesc = selectTheService.setServicesDesc;
+
+
+
+
+
+
 
   return (
     <>
@@ -23,7 +41,7 @@ export default function SidebarMobile({ setShowSidebar }) {
 
         <ul className="p-2">
           <li className="p-2 mb-2 rounded ">
-            <p>صفحه اصلی</p>
+            <Link to="/">صفحه اصلی</Link>
           </li>
           <li className="p-2 mb-2 rounded">
             <div
@@ -60,11 +78,25 @@ export default function SidebarMobile({ setShowSidebar }) {
                     openSubMenuBeautyServices ? "block" : "hidden"
                   } p-2`}
                 >
-                  <li className="text-[#858585] text-sm p-2">تزریق بوتاکس</li>
-                  <li className="text-[#858585] text-sm p-2">تزریق فیلر</li>
-                  <li className="text-[#858585] text-sm p-2">تزریق پلاسماژل</li>
-                  <li className="text-[#858585] text-sm p-2">زاویه سازی صورت</li>
-                  <li className="text-[#858585] text-sm p-2">فرم دهی بینی با ژل</li>
+                  <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "1", service: 1 }}>
+                    تزریق بوتاکس
+                    </Link>
+                  </li>
+                  <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "1", service: 2 }}>
+                    تزریق فیلر
+                    </Link>
+                  </li>
+                  <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "1", service: 3 }}>
+                    تزریق پلاسماژل
+                    </Link>
+                  </li>
+                  <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "1", service: 4 }}>زاویه سازی صورت</Link>
+                  </li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "1", service: 5 }}>فرم دهی بینی با ژل</Link></li>
                 </ul>
               </li>
               <li>
@@ -88,11 +120,11 @@ export default function SidebarMobile({ setShowSidebar }) {
                     openSubMenuHairServices ? "block" : "hidden"
                   } p-2`}
                 >
-                  <li className="text-[#858585] text-sm p-2">کاشت ابرو</li>
-                  <li className="text-[#858585] text-sm p-2">کاشت طبیعی مو</li>
-                  <li className="text-[#858585] text-sm p-2">مزوتراپی مو</li>
-                  <li className="text-[#858585] text-sm p-2">کاشت مژه</li>
-                  <li className="text-[#858585] text-sm p-2">پی آر اف</li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "2", service: 6 }}>کاشت ابرو</Link></li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "2", service: 7 }}>کاشت طبیعی مو</Link></li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "2", service: 8 }}>مزوتراپی مو</Link></li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "2", service: 9 }}>کاشت مژه</Link></li>
+                  <li className="text-[#858585] text-sm p-2"><Link to={"/services"} state={{ category: "2", service: 10 }}>پی آر اف</Link></li>
                 </ul>
               </li>
               <li>
@@ -109,16 +141,24 @@ export default function SidebarMobile({ setShowSidebar }) {
                 <ul
                   className={`${openSubMenuLaserServices ? "block" : "hidden"} p-2`}>
                   <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "3", service: 11 }}>
                     لیزر موهای زائد
+                    </Link>
                   </li>
                   <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "3", service: 12 }}>
                     لیزر پالومار وکتوس
+                    </Link>
                   </li>
                   <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "3", service: 13 }}>
                     لیزر موهای زائد پا
+                    </Link>
                   </li>
                   <li className="text-[#858585] text-sm p-2">
+                    <Link to={"/services"} state={{ category: "3", service: 14 }}>
                     لیزر موهای زائد صورت
+                    </Link>
                   </li>
                 </ul>
               </li>

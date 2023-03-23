@@ -1,11 +1,20 @@
 import React, { useEffect, useState, useRef  } from "react";
+
 import { BiSearchAlt } from "react-icons/bi";
 import SidebarMobile from "./SidebarMobile";
+
+
+
 
 export default function NavbarMobile() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [openSearchBox, setOpenSearchBox] = useState(false)
   const inputRef = useRef();
+
+  
+
+
+
 
   useEffect(() => {
     
