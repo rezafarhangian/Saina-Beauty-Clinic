@@ -15,14 +15,15 @@ export default function ServicesHeader() {
   const location = useLocation();
   
   useEffect(() => {
-
     if (location.state) {
       setServiceSelection(location.state.category);
       setServicesDesc(location.state.service);
     }
-    
+  },[location.state]);
 
-  });
+
+
+
   return (
     <div className="border- mt-8 py-2 md:flex items-start ">
       <div className=" xl:w-[550px]">
