@@ -11,4 +11,22 @@
     background: #7B3EAB;
   }
 
- 
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #0c0c;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #cbd5e1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #7B3EAB;
+    /* background-color: #64748b; */
+    border-radius: 14px;
+  }

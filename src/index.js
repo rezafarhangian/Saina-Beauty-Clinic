@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom"
 import "./index.css"
 import ServiceCategory from "./Context/ServiceCategory"
 import SelecTheService from "./Context/SelectTheService"
+import { ThemeProvider } from "@material-tailwind/react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     <BrowserRouter>
       <ServiceCategory>
         <SelecTheService>
-          <App />
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
         </SelecTheService>
       </ServiceCategory>
     </BrowserRouter>

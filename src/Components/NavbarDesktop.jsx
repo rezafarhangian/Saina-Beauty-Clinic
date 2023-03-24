@@ -235,7 +235,7 @@ export default function NavbarDesktop() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/" className="flex items-center">
+            <NavLink to="/questions" className="flex items-center py-7">
               <img className="ml-2" src="./Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
             </NavLink>

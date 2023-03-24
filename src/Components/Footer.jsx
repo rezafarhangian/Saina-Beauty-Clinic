@@ -5,7 +5,7 @@ import { ImWhatsapp } from "react-icons/im";
 
 export default function Footer() {
   return (
-    <div className="bg-Saina">
+    <div className="bg-Saina ">
       <div className="container flex flex-col md:flex-row md:items-center md:justify-around ">
         
         <div>
