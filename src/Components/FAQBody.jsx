@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 
 export default function FAQBody() {
   const [open, setOpen] = useState(1);
+   const [newQuestionsData, setNewQuestionsData] = useState(questionsData)
 
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -40,32 +41,42 @@ export default function FAQBody() {
         title: "سوال شما با موفقیت ثبت شد",
         confirmButtonText: 'باشه',
       });
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "لطفا فیلد ها را کامل پر کنید",
+        confirmButtonText: 'باشه',
+      });
     }
   };
+
+
+   const getInputValue = (e) => {
+
+     const filteredQuestions = questionsData.filter(q => q.title.includes(e.target.value))
+    
+        setNewQuestionsData(filteredQuestions)
+   }
+
+  
 
   return (
     <div className="mb-7 ">
       <div className="flex items-center justify-between gap-5 mb-10 max-w-2xl m-auto">
-        <div>
-          <select className="outline-0 border-2 bg-white text-gray-500 border-gray-500 rounded-lg text-xs p-[6px]">
-            <option value="">همه</option>
-            <option value="بوتاکس">بوتاکس</option>
-            <option value="لیزر">لیزر</option>
-            <option value="مو">مو</option>
-          </select>
-        </div>
+       
         <div className="flex justify-between items-center border-2 border-gray-500 rounded-lg p-2 grow max-w-xs ">
           <input
             className="outline-0 border-0 text-gray-500 bg-transparent w-full placeholder:text-xs text-xs"
             type="text"
             placeholder="جست و جو   "
+            onChange={getInputValue}
           />
           <CgSearch className="text-gray-500 cursor-pointer" />
         </div>
       </div>
 
       <div className="m-auto  max-w-2xl h-[500px] overflow-y-scroll">
-        {questionsData.map((q) => (
+        {newQuestionsData.length ? newQuestionsData.map((q) => (
           <Accordion
             key={q.id}
             open={open === q.id}
@@ -81,7 +92,7 @@ export default function FAQBody() {
               <span className="p-2 text-xs block text-left">{q.date}</span>
             </AccordionBody>
           </Accordion>
-        ))}
+        )) : <p className="text-center text-gray-500">موردی یافت نشد</p>}
       </div>
 
       <div className="m-auto max-w-2xl relative border-[1px]  border-Saina rounded-lg p-2 mt-10 text-xs h-32">
