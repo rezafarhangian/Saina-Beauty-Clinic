@@ -8,14 +8,14 @@ export default function Header() {
       <NavbarDesktop />
       <NavbarMobile />
 
-      <div className="flex flex-col justify-center items-center lg:items-start md:flex-row relative -z-10 lg:justify-between  mb-16">
+      <div className="flex flex-col justify-center items-center lg:items-start md:flex-row relative -z-10 lg:justify-between  mb-16 ">
         <div className="lg:mt-16 lg:mr-10 pb-10 relative md:order-1 order-2">
           <div className=" overflow-hidden hidden lg:block lg:mr-28 absolute -top-16 mr-4 xl:mr-40  -z-10 ">
             <img className="-mt-14  " src="./Images/Header/icon (1).png" alt="" />
             
           </div>
 
-          <div className="w-32 sm:w-40 xl:w-72 xl:mt-5">
+          <div className="w-32 sm:w-40 xl:w-72 xl:mt-5 ">
             <img src="./Images/Header/logo-larg.png" alt="" />
           </div>
           <p className="mt-10 text-[#363C4F] mb-5 font-bold w-[250px] ">
@@ -30,13 +30,13 @@ export default function Header() {
               مشاوره رایگان
             </button>
           </div>
-            <img className="absolute -top-20 mr-16 -z-40 w-48 lg:w-64 lg:top-0 lg:-mr-8 xl:w-80 xl:top-28 xl:-mr-16" src="./Images/Header/icon-2.png" alt="" />
+            <img className="absolute -top-20 mr-16 -z-40 w-48 lg:w-64 lg:top-0 lg:-mr-8 xl:w-80 xl:top-28 xl:-mr-16 " src="./Images/Header/icon-2.png" alt="" />
           
            
           <img className="absolute  -bottom-28 lg:-bottom-48 xl:-bottom-72 left-10  " src="./Images/Header/plus.png" alt="" />
         </div>
 
-        <div className="lg:-ml-[43px] md:order-2 order-1 mt-20 lg:mt-0	">
+        <div className="lg:-ml-[35px] md:order-2 order-1 mt-20 lg:mt-0	 ">
           <div className="relative -mt-16 overflow-hidden">
             
 

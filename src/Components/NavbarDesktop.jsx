@@ -15,7 +15,7 @@ export default function NavbarDesktop() {
   
 
   return (
-    <div className="hidden lg:flex bg-white  items-center shadow-[0_13px_36px_30px_rgba(83,20,153,0.06)] h-20 rounded-3xl	mt-10 px-2">
+    <div className="hidden lg:flex bg-white  items-center shadow-[0_13px_36px_30px_rgba(83,20,153,0.06)] h-20 rounded-3xl	mt-10 px-2 ">
       <nav className=" h-full w-4/5">
         <ul className="flex items-center justify-evenly  h-full">
           <li>

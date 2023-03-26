@@ -27,7 +27,7 @@ export default function AboutUsSection() {
                 <h3 className="font-bold sm:text-2xl lg:text-4xl">شیراز، فرهنگشهر</h3>
                 <p className="mt-2 lg:mt-5">نبش کوچه30، ساختمان اسکار،طبقه دوم، واحد 6</p>
               </div>
-              <button className="bg-Saina  absolute  left-4 bottom-4  sm:left-20 md:left-[108px] lg:left-[270px] lg:bottom-32 xl:left-[360px] text-white p-2  rounded-xl text-sm">مشاهده بر روی نقشه</button>
+              <button className="bg-Saina  absolute  left-4 bottom-2  sm:left-20 md:left-[108px] lg:left-[270px] lg:bottom-32 xl:left-[360px] text-white p-2  rounded-xl text-[10px] lg:text-xs">مشاهده بر روی نقشه</button>
             </div>
           </div>
         </div>
