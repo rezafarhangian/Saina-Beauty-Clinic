@@ -8,7 +8,7 @@ export default function App() {
   const router = useRoutes(routs)
 
   return (
-    <div className='font-Saina'>
+    <div className='font-Saina '>
       {router}
     </div>
   );

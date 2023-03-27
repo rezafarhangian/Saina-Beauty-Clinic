@@ -17,10 +17,10 @@ export default function NavbarDesktop() {
   return (
     <div className="hidden lg:flex bg-white  items-center shadow-[0_13px_36px_30px_rgba(83,20,153,0.06)] h-20 rounded-3xl	mt-10 px-2 ">
       <nav className=" h-full w-4/5">
-        <ul className="flex items-center justify-evenly  h-full">
+        <ul className="flex items-center justify-evenly h-full">
           <li>
             <NavLink to="/" className="flex items-center">
-              <img className="ml-2" src="./Images/IconNavBar/Home.png" alt="" />
+              <img className="ml-2" src="http://localhost:3000/Images/IconNavBar/Home.png" alt="" />
               <p className="">صفحه اصلی</p>
             </NavLink>
           </li>
@@ -28,7 +28,7 @@ export default function NavbarDesktop() {
             <div className=" group  py-7 flex items-center cursor-pointer relative z-[100]">
               <img
                 className="ml-2"
-                src="./Images/IconNavBar/category.png"
+                src="http://localhost:3000/Images/IconNavBar/category.png"
                 alt=""
               />
               <NavLink
@@ -224,8 +224,8 @@ export default function NavbarDesktop() {
               </ul>
             </div>
           </li>
-          <li>
-            <NavLink to="/" className="flex items-center">
+          {/* <li>
+            <NavLink to="articles" className="flex items-center">
               <img
                 className="ml-2"
                 src="./Images/IconNavBar/file text.png"
@@ -233,10 +233,10 @@ export default function NavbarDesktop() {
               />
               <p className="">وبلاگ</p>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/questions" className="flex items-center py-7">
-              <img className="ml-2" src="./Images/IconNavBar/_.png" alt="" />
+              <img className="ml-2" src="http://localhost:3000/Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
             </NavLink>
           </li>
@@ -244,7 +244,7 @@ export default function NavbarDesktop() {
             <NavLink to="/" className="flex items-center">
               <img
                 className="ml-2"
-                src="./Images/IconNavBar/Users.png"
+                src="http://localhost:3000/Images/IconNavBar/Users.png"
                 alt=""
               />
               <p className="">درباره ما</p>
