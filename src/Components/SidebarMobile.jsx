@@ -166,9 +166,14 @@ export default function SidebarMobile({ setShowSidebar }) {
           </li>
           {/* ======================= Finish Submenu==================== */}
          
-          <li className="w-full mb-2 rounded"> 
-          <Link className=" w-full py-2 pr-2 pl-20 " to='/questions'>
+          <li className="w-full mb-4 rounded"> 
+          <Link className=" w-full py-2 pr-2 pl-20" to='/questions'>
              سوالات متداول
+          </Link>
+          </li>
+          <li className="w-full mb-2 rounded "> 
+          <Link className=" w-full py-2 pr-2 pl-20 b " to='/userComments'>
+              نظرات کاربران
           </Link>
           </li>
           <li className="p-2 mb-2 rounded">درباره ما</li>

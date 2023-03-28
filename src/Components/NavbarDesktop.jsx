@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
+import { FaRegComments } from "react-icons/fa";
 
 import { useChooseServiceCategory } from "../Context/ServiceCategory";
 import { useSelectTheService } from "../Context/SelectTheService";
@@ -229,6 +230,12 @@ export default function NavbarDesktop() {
             <NavLink to="/questions" className="flex items-center py-7">
               <img className="ml-2" src="/Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/userComments" className="flex items-center py-7">
+              <FaRegComments className="ml-2 text-2xl"/>
+              <p className="">نظرات کاربران</p>
             </NavLink>
           </li>
           <li>
