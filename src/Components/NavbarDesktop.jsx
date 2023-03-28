@@ -20,7 +20,7 @@ export default function NavbarDesktop() {
         <ul className="flex items-center justify-evenly h-full">
           <li>
             <NavLink to="/" className="flex items-center">
-              <img className="ml-2" src="http://localhost:3000/Images/IconNavBar/Home.png" alt="" />
+              <img className="ml-2" src="/Images/IconNavBar/Home.png" alt="" />
               <p className="">صفحه اصلی</p>
             </NavLink>
           </li>
@@ -28,7 +28,7 @@ export default function NavbarDesktop() {
             <div className=" group  py-7 flex items-center cursor-pointer relative z-[100]">
               <img
                 className="ml-2"
-                src="http://localhost:3000/Images/IconNavBar/category.png"
+                src="./Images/IconNavBar/category.png"
                 alt=""
               />
               <NavLink
@@ -54,7 +54,7 @@ export default function NavbarDesktop() {
 
               <ul className="absolute  hidden group-hover:block  w-48 top-24  shadow bg-white  rounded-2xl">
                 <li className="border-b-[1px] group/item border-Saina   ">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pl-1">
                     <Link
                       onClick={() => setServiceSelection("1")}
                       to="/services"
@@ -127,7 +127,7 @@ export default function NavbarDesktop() {
                   </ul>
                 </li>
                 <li className="border-b-[1px] group/item2 border-Saina ">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pl-1">
                     <Link
                       onClick={() => setServiceSelection("2")}
                       to="/services"
@@ -175,7 +175,7 @@ export default function NavbarDesktop() {
                   </ul>
                 </li>
                 <li className="  group/item3  ">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pl-1">
                     <Link
                       onClick={() => setServiceSelection("3")}
                       to="/services"
@@ -224,19 +224,10 @@ export default function NavbarDesktop() {
               </ul>
             </div>
           </li>
-          {/* <li>
-            <NavLink to="articles" className="flex items-center">
-              <img
-                className="ml-2"
-                src="./Images/IconNavBar/file text.png"
-                alt=""
-              />
-              <p className="">وبلاگ</p>
-            </NavLink>
-          </li> */}
+         
           <li>
             <NavLink to="/questions" className="flex items-center py-7">
-              <img className="ml-2" src="http://localhost:3000/Images/IconNavBar/_.png" alt="" />
+              <img className="ml-2" src="/Images/IconNavBar/_.png" alt="" />
               <p className="">سوالات متداول</p>
             </NavLink>
           </li>
@@ -244,7 +235,7 @@ export default function NavbarDesktop() {
             <NavLink to="/" className="flex items-center">
               <img
                 className="ml-2"
-                src="http://localhost:3000/Images/IconNavBar/Users.png"
+                src="/Images/IconNavBar/Users.png"
                 alt=""
               />
               <p className="">درباره ما</p>

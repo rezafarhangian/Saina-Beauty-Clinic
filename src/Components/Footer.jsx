@@ -52,7 +52,7 @@ export default function Footer() {
         <div className=" w-72 md:w-80 xl:-ml-28  p-4 m-auto md:m-0 md:border-r-[1px] border-[#C4A0E1]   bg-red-40">
           <img
             className="w-[180px] m-auto"
-            src="http://localhost:3000/Images/Footer/logo-footer1.png"
+            src="/Images/Footer/logo-footer1.png"
             alt="logo"
           />
           <p className="text-[#C4A0E1] text-xs mt-4">

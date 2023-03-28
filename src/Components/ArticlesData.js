@@ -6,7 +6,7 @@ const allArticles = [
     date: "",
     desc: "کلاژن چیست ؟ کُلاژِن (به انگلیسی: Collagen) که از واژه ی یونانی کلا به معنای چسب گرفته شده یک پروتئین سخت، نا محلول و فیبری است که از فراوان ترین پروتئین...",
     main: ` 
-    <img class="m-auto mb-5" src="http://localhost:3000/Images/Articles/photo1.jpg" alt="" />
+    <img class="m-auto mb-5" src="/Images/Articles/photo1.jpg" alt="" />
     <h2 class="mb-5 text-2xl">کلاژن چیست ؟</h2><div class="text-xs lg:text-sm">
            <p class="mb-5">کُلاژِن (به انگلیسی: Collagen) که از واژه ی یونانی کلا به معنای چسب
             گرفته شده یک پروتئین سخت، نا محلول و فیبری است که از فراوان ترین
@@ -219,7 +219,7 @@ const allArticles = [
     title: "مزایای لیزر موهای زائد چیست؟",
     date: "",
     desc: "مزایای لیزر موهای زائد مزایای لیزر موهای زائد بدن تنها موجب از بین رفتن موها نخواهد شد، بلکه می‌تواند مزایای بسیاری برای پوست به همراه داشته باشد. ازجمله مزایای لیزر...",
-    main: ` <img class="m-auto mb-5" src="http://localhost:3000/Images/Articles/photo6.jpg" alt="" />
+    main: ` <img class="m-auto mb-5" src="/Images/Articles/photo6.jpg" alt="" />
         <h2 class="my-5 text-gray-500 text-2xl">مزایای لیزر موهای زائد</h2>
 
         <div class="text-xs lg:text-sm">
@@ -324,7 +324,7 @@ const allArticles = [
     desc: "مزونیدلینگ چیست ؟ کلمه مزونیدلینگ از ترکیب دو کلمه مزو و نیدلینگ تشکیل شده است. همین موضوع نشان می‌دهد که این روش یکی از روش‌های ترکیبی برای جوان‌سازی پوست...",
     main: ` <img
         class="m-auto mb-5"
-        src="http://localhost:3000/Images/Articles/photo2.jpg"
+        src="/Images/Articles/photo2.jpg"
         alt=""
       />
       <h2 class="my-5 text-gray-500 text-2xl">مزونیدلینگ چیست ؟</h2>
@@ -362,7 +362,7 @@ const allArticles = [
         </p>
         <img
           class="my-5 m-auto"
-          src="http://localhost:3000/Images/Articles/مزونیدلینگ-صورت.jpg"
+          src="/Images/Articles/مزونیدلینگ-صورت.jpg"
           alt="مزونیدلینگ-صورت"
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -398,7 +398,7 @@ const allArticles = [
         </p>
         <img
           class="my-5 m-auto"
-          src="http://localhost:3000/Images/Articles/مزونیدلینگ-مو.jpg"
+          src="/Images/Articles/مزونیدلینگ-مو.jpg"
           alt="مزونیدلینگ-مو"
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -613,7 +613,7 @@ const allArticles = [
     desc: "بوتاکس خط اخم بوتاکس خط اخم و پیشانی یا سایر نواحی همیشه موثر واقع نمی‌شود و به عوامل و شرایط مختلفی بستگی دارد؛‌ برای تزریق بوتاکس شرایط جسمی و...",
     main: ` <img
         class="m-auto mb-5"
-        src="./Images/Articles/photo5.jpg"
+        src="/Images/Articles/photo5.jpg"
         alt=""
       />
       <h2 class="my-5 text-gray-500 text-2xl">بوتاکس خط اخم</h2>
@@ -641,7 +641,7 @@ const allArticles = [
         </p>
         <img
           class="m-auto"
-          src="http://localhost:3000/Images/Articles/فرایند-تزریق-بوتاکس-خط-اخم.jpg"
+          src="/Images/Articles/فرایند-تزریق-بوتاکس-خط-اخم.jpg"
           alt=""
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -678,7 +678,7 @@ const allArticles = [
         </ul>
         <img
           class="m-auto"
-          src="http://localhost:3000/Images/Articles/مزیت-بوتاکس-خط-اخم.jpg"
+          src="/Images/Articles/مزیت-بوتاکس-خط-اخم.jpg"
           alt="مزیت-بوتاکس-خط-اخم"
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -825,7 +825,7 @@ const allArticles = [
     desc: "فیلر بینی در فرایند تزریق فیلر بینی یک پرکننده مورد استفاده قرار می‌گیرد؛ این پرکننده می‌تواند انواع مختلفی از فیلر باشد. اما به طور معمول از هیالورونیک اسید برای این کار...",
     main: `   <img
         class="m-auto mb-5"
-        src="http://localhost:3000/Images/Articles/photo3.jpg"
+        src="/Images/Articles/photo3.jpg"
         alt=""
       />
       <h2 class="my-5 text-gray-500 text-2xl">فیلر بینی</h2>
@@ -948,7 +948,7 @@ const allArticles = [
         </ul>
         <img
           class="m-auto my-8"
-          src="http://localhost:3000/Images/Articles/مزیت-تزریق-فیلر-بینی.jpg"
+          src="/Images/Articles/مزیت-تزریق-فیلر-بینی.jpg"
           alt="مزیت-تزریق-فیلر-بینی"
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -1009,7 +1009,7 @@ const allArticles = [
         </p>
         <img
           class="m-auto my-8"
-          src="http://localhost:3000/Images/Articles/عوارض-فیلر-بینی.jpg"
+          src="/Images/Articles/عوارض-فیلر-بینی.jpg"
           alt="عوارض-فیلر-بینی"
         />
         <h3 class="mt-5 mb-3 text-xl text-red-400">
@@ -1057,7 +1057,7 @@ const allArticles = [
     desc: "فیلر خط خنده در سال‌های اخیر استفاده از تزریق ژل برای از بین بردن چین‌ و چروک‌های پوستی کاربرد فراوانی پیدا کرده است. در روش‌های مختلف تزریق فیلر از ژل‌های...",
     main: `  <img
         class="m-auto mb-5"
-        src="http://localhost:3000/Images/Articles/photo4.jpg"
+        src="/Images/Articles/photo4.jpg"
         alt=""
       />
       <h2 class="my-5 text-gray-500 text-2xl">فیلر خط خنده</h2>
