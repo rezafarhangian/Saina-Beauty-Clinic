@@ -38,7 +38,7 @@ export default function ArticlesSection() {
           وبلاگ <span className="text-Saina">ساینا</span>
         </h2>
         <img
-          className="absolute -top-20 right-[300px] xl:right-[440px] hidden lg:block"
+          className="absolute -top-20 right-[300px] xl:right-[450px] hidden lg:block"
           src="./Images/Specialists/Ellipse.png"
           alt=""
         />

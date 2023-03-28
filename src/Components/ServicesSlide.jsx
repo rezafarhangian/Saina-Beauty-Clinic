@@ -11,11 +11,11 @@ export default function ServicesSlide() {
   return (
     <div className="container m-auto py-4 px-1 max-w-[124rem]">
 
-      <div className="text-center mb-10 relative my-8">
+      <div className="text-center mb-12 relative my-8">
         <h2 className="text-3xl md:text-5xl text-[#363E4E]">
-          تصاویر <span className="text-Saina">ساینا</span>
+          گالری تصاویر
         </h2>
-         <img className="absolute -top-20 right-[280px] xl:right-[410px] hidden lg:block " src="./Images/ServicesSlider/Ellipse.png" alt="" />
+         <img className="absolute -top-20 right-[280px] xl:right-[450px] hidden lg:block " src="./Images/ServicesSlider/Ellipse.png" alt="" />
          <img className="absolute hidden lg:block -right-10 top-28 xl:-right-[115px]" src="./Images/ServicesSlider/influence.png" alt="" />
        
       </div>
@@ -41,49 +41,49 @@ export default function ServicesSlide() {
         <SwiperSlide className="w-[250px]  h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px] rounded-2xl overflow-hidden  relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-3.jpg"
+            src="./Images/ServicesSlider/photo1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-4.jpg"
+            src="./Images/ServicesSlider/photo2.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-5.jpg"
+            src="./Images/ServicesSlider/photo3.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-6.jpg"
+            src="./Images/ServicesSlider/photo4.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-7.jpg"
+            src="./Images/ServicesSlider/photo5.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-1.jpeg"
+            src="./Images/ServicesSlider/photo6.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]  rounded-2xl overflow-hidden relative">
           <img
             className="w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] lg:w-[450px] xl:w-[500px]   object-cover"
-            src="./Images/ServicesSlider/photo-2.jpeg"
+            src="./Images/ServicesSlider/photo7.jpg"
             alt=""
           />
         </SwiperSlide>

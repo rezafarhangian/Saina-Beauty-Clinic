@@ -13,7 +13,7 @@ export default function Specialists() {
             <h2 className='text-3xl md:text-5xl text-[#363E4E]'>متخصصان <span className='text-Saina'>ساینا</span></h2>
         </div>
          
-        <img className='absolute -top-20 right-[250px] xl:right-[380px] hidden lg:block' src="./Images/Specialists/Ellipse.png" alt="" />
+        <img className='absolute -top-20 right-[250px] xl:right-[430px] hidden lg:block' src="./Images/Specialists/Ellipse.png" alt="" />
 
         <Swiper
           slidesPerView={1}
