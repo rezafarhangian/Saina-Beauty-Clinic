@@ -195,7 +195,7 @@ export default function ServicesHeader() {
 
           <img
             className="w-[188px] sm:w-[250px] md:w-[280px] xl:mr-20"
-            src="./Images/Services/background.png"
+            src="./Images/ServicesSection/background.png"
             alt="logo"
           />
         </div>
@@ -205,12 +205,12 @@ export default function ServicesHeader() {
         <div className="md:mt-16">
           <img
             className="w-48 md:w-64 xl:w-80"
-            src="./Images/Services/logo-2.png"
+            src="./Images/ServicesSection/logo-2.png"
             alt="logo"
           />
           <img
             className="w-48 md:w-64 xl:w-80 xl:-left-24 absolute -top-10 left-0 md:top-7 md:-left-10"
-            src="./Images/Services/Ellipse20.png"
+            src="./Images/ServicesSection/Ellipse20.png"
             alt="logo"
           />
         </div>

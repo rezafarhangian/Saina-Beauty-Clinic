@@ -239,7 +239,7 @@ export default function NavbarDesktop() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/" className="flex items-center">
+            <NavLink to="/aboutUs" className="flex items-center">
               <img
                 className="ml-2"
                 src="/Images/IconNavBar/Users.png"

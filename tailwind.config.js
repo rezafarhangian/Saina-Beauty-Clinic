@@ -20,7 +20,9 @@ module.exports = withMT ({
 
       colors: {
         Saina: "#7B3EAB",
-      }
+      },
+
+     
     },
 
 
