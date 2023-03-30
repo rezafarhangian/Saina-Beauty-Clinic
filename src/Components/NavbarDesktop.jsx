@@ -1,7 +1,10 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineHome } from "react-icons/ai";
 import { FaRegComments } from "react-icons/fa";
+import { BsQuestionCircle } from "react-icons/bs";
+import { FiUsers } from "react-icons/fi";
+import { BiCategory } from "react-icons/bi";
 
 import { useChooseServiceCategory } from "../Context/ServiceCategory";
 import { useSelectTheService } from "../Context/SelectTheService";
@@ -20,22 +23,19 @@ export default function NavbarDesktop() {
       <nav className=" h-full w-4/5">
         <ul className="flex items-center justify-evenly h-full">
           <li>
-            <NavLink to="/" className="flex items-center">
-              <img className="ml-2" src="/Images/IconNavBar/Home.png" alt="" />
+            <NavLink to="/"  className={({ isActive }) => (isActive ? "flex items-center text-Saina py-7" : "flex items-center py-7")}>
+              <AiOutlineHome className="ml-2 text-xl"/>
               <p className="">صفحه اصلی</p>
             </NavLink>
           </li>
           <li>
             <div className=" group  py-7 flex items-center cursor-pointer relative z-[100]">
-              <img
-                className="ml-2"
-                src="./Images/IconNavBar/category.png"
-                alt=""
-              />
+             
               <NavLink
                 to="/services"
-                className={`group-hover:text-Saina  h-full py-7`}
+                className={({ isActive }) => (isActive ? "group-hover:text-Saina  h-full py-7 text-Saina flex items-center" : "group-hover:text-Saina  h-full py-7 flex items-center")}
               >
+              <BiCategory className="ml-2 text-xl"/>
                 خدمات ساینا
               </NavLink>
               <svg
@@ -227,24 +227,21 @@ export default function NavbarDesktop() {
           </li>
          
           <li>
-            <NavLink to="/questions" className="flex items-center py-7">
-              <img className="ml-2" src="/Images/IconNavBar/_.png" alt="" />
+            <NavLink to="/questions"  className={({ isActive }) => (isActive ? "flex items-center py-7 text-Saina" : "flex items-center py-7")}>
+              <BsQuestionCircle className="ml-2 text-xl"/>
               <p className="">سوالات متداول</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/userComments" className="flex items-center py-7">
+            <NavLink to="/userComments"  className={({ isActive }) => (isActive ? "flex items-center py-7 text-Saina" : "flex items-center py-7")}>
               <FaRegComments className="ml-2 text-2xl"/>
-              <p className="">نظرات کاربران</p>
+              <p className="">نظرات مشتریان</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutUs" className="flex items-center">
-              <img
-                className="ml-2"
-                src="/Images/IconNavBar/Users.png"
-                alt=""
-              />
+            <NavLink to="/aboutUs"  className={({ isActive }) => (isActive ? "flex items-center text-Saina  py-7" : "flex items-center  py-7")}>
+          
+              <FiUsers className="ml-2 text-xl"/>
               <p className="">درباره ما</p>
             </NavLink>
           </li>

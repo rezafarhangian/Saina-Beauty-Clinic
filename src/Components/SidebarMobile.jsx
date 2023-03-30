@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsChevronUp } from "react-icons/bs";
-import { Link, NavLink } from "react-router-dom";
-
-import { useChooseServiceCategory } from "../Context/ServiceCategory";
-import { useSelectTheService } from "../Context/SelectTheService";
+import { Link } from "react-router-dom";
 
 export default function SidebarMobile({ setShowSidebar }) {
   const [openSubMenuServices, setOpenSubMenuServices] = useState(false);
@@ -14,11 +11,7 @@ export default function SidebarMobile({ setShowSidebar }) {
   const [openSubMenuLaserServices, setOpenSubMenuLaserServices] =
     useState(false);
 
-  const serviceCategory = useChooseServiceCategory();
-  const setServiceSelection = serviceCategory.setServiceSelection;
 
-  const selectTheService = useSelectTheService();
-  const setServicesDesc = selectTheService.setServicesDesc;
 
   return (
     <>
@@ -249,7 +242,7 @@ export default function SidebarMobile({ setShowSidebar }) {
           </li>
           <li className="w-full mb-2 rounded ">
             <Link className=" w-full py-2 pr-2 pl-20 b " to="/userComments">
-              نظرات کاربران
+              نظرات مشتریان
             </Link>
           </li>
           <li className="w-full mb-2 rounded ">
