@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiUser } from "react-icons/bi";
-import AllComments from "../Components/CustomersCommentsData";
+import AllComments from "../Data/CustomersCommentsData";
 import Swal from "sweetalert2";
 
 export default function UserCommentsBody() {

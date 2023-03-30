@@ -2,43 +2,72 @@ import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone, BsInstagram, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+
   return (
     <div className="bg-Saina ">
       <div className="container flex flex-col md:flex-row md:items-center md:justify-around ">
         
         <div>
           <div className="flex items-center lg:justify-center pt-2 m-auto flex-wrap md:pb-[62px]	border-b-[1px] border-[#C4A0E1]">
-            <div className="w-36 md:w-48 h-48">
-              <p className="text-white border-b-[1px] border-[#C4A0E1] py-2">
+            <div className="w-36 md:w-48 h-48 ">
+              <p className="text-white border-b-[1px] text-center border-[#C4A0E1] py-2">
                 دسترسی سریع
               </p>
-              <ul className="text-[#C4A0E1] text-sm mt-4">
-                <li>خانه</li>
-                <li className="mt-1">مقالات</li>
-                <li className="mt-1">نظرات مشتریان</li>
+              <ul className="text-[#C4A0E1] text-sm mt-4 text-center">
+                <li>
+                  <Link to="/">خانه</Link>
+                </li>
+                <li className="mt-1">
+                  <Link to="/services">خدمات ساینا</Link>
+                </li>
+                <li className="mt-1">
+                  <Link to="/userComments">نظرات مشتریان</Link>
+                </li>
               </ul>
             </div>
             <div className="w-36 md:w-48 h-48 ">
-              <p className="text-white border-b-[1px] border-[#C4A0E1] py-2">
+              <p className="text-white border-b-[1px] text-center border-[#C4A0E1] py-2">
                 جدیدترین خدمات
               </p>
-              <ul className="text-[#C4A0E1] text-sm mt-4">
-                <li>تزریق بوتاکس</li>
-                <li className="mt-1">تزیق فیلر</li>
-                <li className="mt-1">کاشت مژه</li>
-                <li className="mt-1">پی آر اف</li>
+              <ul className="text-[#C4A0E1] text-sm mt-4 text-center">
+                <li>
+                  <Link   to={"/services"}
+                      state={{ category: "1", service: 1 }}
+                    >تزریق بوتاکس</Link>
+                </li>
+                <li className="mt-1">
+                  <Link   to={"/services"}
+                      state={{ category: "1", service: 2 }}>تزیق فیلر</Link>
+                </li>
+                <li className="mt-1">
+                  <Link
+                  to={"/services"}
+                  state={{ category: "2", service: 9 }}
+                  >کاشت مژه</Link>
+                </li>
+                <li className="mt-1">
+                  <Link to={"/services"}
+                      state={{ category: "2", service: 10 }}>پی آر اف</Link>
+                </li>
               </ul>
             </div>
             <div className="w-36 md:w-48 h-48">
-              <p className="text-white border-b-[1px] border-[#C4A0E1] py-2">
+              <p className="text-white border-b-[1px] text-center border-[#C4A0E1] py-2">
                 لینک های مفید
               </p>
-              <ul className="text-[#C4A0E1] text-sm mt-4">
-                <li className="mt-1">تماس با ما</li>
-                <li className="mt-1">درباره ما</li>
-                <li className="mt-1">معرفی پزشکان</li>
+              <ul className="text-[#C4A0E1] text-sm mt-4 text-center">
+                <li className="mt-1">
+                  <Link to="/">تماس با ما</Link>
+                </li>
+                <li className="mt-1">
+                  <Link to="/aboutUs">درباره ما</Link>
+                </li>
+                <li className="mt-1">
+                  <Link to="/aboutUs">معرفی پزشکان</Link>
+                </li>
               </ul>
             </div>
           </div>

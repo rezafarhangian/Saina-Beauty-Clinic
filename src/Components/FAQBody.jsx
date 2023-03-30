@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { CgSearch } from "react-icons/cg";
-import questionsData from "../questionsData";
+import questionsData from "../Data/questionsData";
 import {
   Accordion,
   AccordionHeader,

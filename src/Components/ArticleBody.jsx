@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import allArticles from "../Components/ArticlesData";
+import allArticles from "../Data/ArticlesData";
 import { useParams } from "react-router-dom";
 import DOMPurify from 'dompurify';
 

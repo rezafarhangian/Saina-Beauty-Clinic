@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
-import Comments from "./CustomersCommentsData";
+import Comments from "../Data/CustomersCommentsData";
 
 export default function CustomersComments() {
   return (

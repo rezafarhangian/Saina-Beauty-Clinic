@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ArticlesBox from "./ArticlesBox";
-import allArticles from "./ArticlesData";
+import allArticles from "../Data/ArticlesData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

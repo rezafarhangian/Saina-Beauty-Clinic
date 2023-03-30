@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ServicesData from "../ServicesData"
+import ServicesData from "../Data/ServicesData"
 import {useSelectTheService} from "../Context/SelectTheService"
 
 export default function ServiceDescription() {
